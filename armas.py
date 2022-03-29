@@ -11,8 +11,9 @@ class Armas:
         print('Força: {}\nDestreza: {}\nResistencia: {}\n'.format(self.forca, self.destreza,
                                                                              self.resistencia))
 
+
 class Espadas(Armas):
-    classe = 'Guerreiros'
+    classe = 'Guerreiro'
     tipo = 'Espada'
 
     def __init__(self, nome, level_minimo, forca, destreza, resistencia):
@@ -25,7 +26,7 @@ class Espadas(Armas):
 
 
 class Adagas(Armas):
-    classe = 'Ladinos'
+    classe = 'Ladino'
     tipo = 'Adaga'
 
     def __init__(self, nome, level_minimo, forca, destreza, resistencia):
@@ -36,8 +37,9 @@ class Adagas(Armas):
         self.destreza = destreza
         self.resistencia = resistencia
 
+
 class Arcos(Armas):
-    classe = 'Arqueiros'
+    classe = 'Arqueiro'
     tipo = 'Arcos'
 
     def __init__(self, nome, level_minimo, forca, destreza, resistencia):
@@ -48,8 +50,9 @@ class Arcos(Armas):
         self.destreza = destreza
         self.resistencia = resistencia
 
+
 class Cajados(Armas):
-    classe = 'Magos'
+    classe = 'Mago'
     tipo = 'Cajados'
 
     def __init__(self, nome, level_minimo, forca, destreza, resistencia):

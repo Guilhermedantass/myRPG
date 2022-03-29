@@ -1,5 +1,6 @@
 import random
 
+import armas
 
 NOMES = ['Lucas', 'Guilherme', 'João', 'Aquiles', 'Pablo', 'Lorenzo',
          'Murilo', 'Caio', 'Renan', 'Marcelo', 'Gabriel', 'João', 'Vicente',
