@@ -25,7 +25,7 @@ class Personagem:
 
         self.hp = int(hp + 3*self.level)
 
-        if forca and resistencia and destreza:
+        if forca or resistencia or destreza:
             self.forca = forca
             self.resistencia = resistencia
             self.destreza = destreza

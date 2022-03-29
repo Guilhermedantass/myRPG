@@ -1,4 +1,5 @@
 import personagens
+import armas
 
 NOME = input('Ola aventureiro, está preparado para uma nova aventura? Antes de tudo, nos diga seu nome: ')
 
@@ -9,8 +10,7 @@ print(''' 1 - Guerreiro
  4 - Mago
 ''')
 
-eu = personagens.Guerreiro(NOME)
+eu = personagens.Guerreiro(NOME, forca=10, destreza=0,resistencia=5)
 
 print(eu)
-print(eu.hp)
 eu.mostrar_atributos()
