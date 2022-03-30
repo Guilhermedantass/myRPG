@@ -1,11 +1,15 @@
 
 
 class Armas:
-    def __init__(self, nome=None, classe=None, tipo=None, level_minimo=None, forca=None, destreza=None, resistencia=None):
-        pass
+    def __init__(self, nome, level_minimo, forca, destreza, resistencia, classe=None, tipo=None):
+        self.nome = nome
+        self.level_minimo = level_minimo
+        self.forca = forca
+        self.destreza = destreza
+        self.resistencia = resistencia
 
     def __str__(self):
-        return '{} ({} Lvl: {})'.format(self.nome, self.tipo, self.level_minimo)
+        return '{} ({} Lvl minimo: {})'.format(self.nome, self.tipo, self.level_minimo)
 
     def mostrar_atributos(self):
         print('Força: {}\nDestreza: {}\nResistencia: {}\n'.format(self.forca, self.destreza,
@@ -16,52 +20,20 @@ class Espadas(Armas):
     classe = 'Guerreiro'
     tipo = 'Espada'
 
-    def __init__(self, nome, level_minimo, forca, destreza, resistencia):
-        super()
-        self.nome = nome
-        self.level_minimo = level_minimo
-        self.forca = forca
-        self.destreza = destreza
-        self.resistencia = resistencia
-
 
 class Adagas(Armas):
     classe = 'Ladino'
     tipo = 'Adaga'
-
-    def __init__(self, nome, level_minimo, forca, destreza, resistencia):
-        super()
-        self.nome = nome
-        self.level_minimo = level_minimo
-        self.forca = forca
-        self.destreza = destreza
-        self.resistencia = resistencia
 
 
 class Arcos(Armas):
     classe = 'Arqueiro'
     tipo = 'Arcos'
 
-    def __init__(self, nome, level_minimo, forca, destreza, resistencia):
-        super()
-        self.nome = nome
-        self.level_minimo = level_minimo
-        self.forca = forca
-        self.destreza = destreza
-        self.resistencia = resistencia
-
 
 class Cajados(Armas):
     classe = 'Mago'
     tipo = 'Cajados'
-
-    def __init__(self, nome, level_minimo, forca, destreza, resistencia):
-        super()
-        self.nome = nome
-        self.level_minimo = level_minimo
-        self.forca = forca
-        self.destreza = destreza
-        self.resistencia = resistencia
 
 
 maca_de_guerra = Espadas('Maça de Guerra', 1, 3, 1, 6)

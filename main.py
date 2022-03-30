@@ -10,15 +10,11 @@ NOME = input('Ola aventureiro, está preparado para uma nova aventura? Antes de 
 #  4 - Mago
 # ''')
 
-eu = personagens.Guerreiro(NOME, forca=10, destreza=0,resistencia=5)
+eu = personagens.Guerreiro(NOME, level=2, forca=10, destreza=0, resistencia=5)
+print(eu)
+eu.mostrar_atributos()
 
-eu.arma = armas.maca_de_guerra
-
-if eu.classe == eu.arma.classe:
-    eu.forca += eu.arma.classe * 1.3
-    eu.destreza += eu.arma.classe * 1.3
-    eu.resistencia += eu.arma.classe * 1.3
-else:
-    print('sem bonus')
-
+eu.conquistar_equipamento(armas.maca_de_guerra)
+eu.conquistar_equipamento(armas.espada_grande)
+eu.equipar_armas()
 eu.mostrar_atributos()
